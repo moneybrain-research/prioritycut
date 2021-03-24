@@ -3,20 +3,17 @@ layout: default
 ---
 
 # Abstract 
-A variety of effective face-swap and face-reenactment methods have been publicized in recent years, democratizing the face synthesis technology to a great extent. Videos generated as such have come to be collectively called deepfakes with a negative connotation, for various social problems they have caused. Facing the emerging threat of deepfakes, we have built the Korean DeepFake Detection Dataset (KoDF), a large-scale collection of synthesized and real videos focused on Korean subjects. In this paper, we provide a detailed description of methods used to construct the dataset, experimentally show the discrepancy between the distributions of KoDF and existing deepfake detection datasets, and underline the importance of using multiple datasets for real-world generalization. KoDF is publicly available at [https://moneybrain-research.github.io/kodf](https://moneybrain-research.github.io/kodf) in its entirety (i.e. real clips, synthesized clips, clips with additive noise, and their corresponding metadata).
-
-# Download 
-This project is supervised by Ministry of Science and ICT (MSIT) and supported by National Information Society Agency (NIA). KoDF will soon be publicly released (scheduled on March 31) via a [designated page](https://aihub.or.kr/aidata/8005) of their assoicated organization, AI Hub.
-
-**Notes** : The KoDF download page linked above is in Korean. As soon as the dataset is released, we will provide a detailed English guidance here regarding how to download KoDF.
+Image animation generates a video of a source image following the motion of a driving video. State-of-the-art self-supervised image animation approaches warp the source image according to the motion of the driving video and recover the warping artifacts by inpainting. These approaches mostly use vanilla convolution for inpainting, and vanilla convolution does not distinguish between valid and invalid pixels. As a result, visual artifacts are still noticeable after inpainting. CutMix is a state-of-the-art regularization strategy that cuts and mixes patches of images and is widely studied in different computer vision tasks. Among the remaining computer vision tasks, warp-based image animation is one of the fields that the effects of CutMix have yet to be studied. This paper first presents a preliminary study on the effects of CutMix on warp-based image animation. We observed in our study that CutMix helps improve only pixel values, but disturbs the spatial relationships between pixels. Based on such observation, we propose PriorityCut, a novel augmentation approach that uses the top-k percent occluded pixels of the foreground to regularize warp-based image animation. By leveraging the domain knowledge in warp-based image animation, PriorityCut significantly reduces the warping artifacts in state-of-the-art warp-based image animation models on diverse datasets.
 
 # Citation 
 
 ```plain
-@article{kwon2021,
-  author = {Patrick Kwon, Jaeseong You, Gyuhyeon Nam, Sungwoo Park, Gyeongsu Chae},
-  title = {KoDF: A Large-scale Korean DeepFake Detection Dataset},
-  journal = {arXiv preprint arXiv:2103.10094},
-  year = {2021}
+@article{cheung2021prioritycut,
+      title={PriorityCut: Occlusion-guided Regularization for Warp-based Image Animation}, 
+      author={Wai Ting Cheung and Gyeongsu Chae},
+      year={2021},
+      eprint={2103.11600},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
