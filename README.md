@@ -11,9 +11,7 @@ Image animation generates a video of a source image following the motion of a dr
 
 ![teaser](https://user-images.githubusercontent.com/64956291/112425285-279b9900-8d79-11eb-9199-22b0e76d7393.png)
 
-Warp-based image animation warps the source image (1st column) based on the driving image (2nd column) and recovers the warping artifacts by inpainting (3rd column). PriorityCut utilizes the occlusion information (4th column) in image animation indicating the locations of warping artifacts (5th column) to regularize discriminator predictions on inpainting. The augmented image (6th column) contains a mixture of patches between the driving and the generated images.
-
-For further details, please refer to the [paper](https://arxiv.org/abs/2103.11600).
+Warp-based image animation warps the source image (1st column) based on the driving image (2nd column) and recovers the warping artifacts by inpainting (3rd column). PriorityCut utilizes the occlusion information (4th column) in image animation indicating the locations of warping artifacts (5th column) to regularize discriminator predictions on inpainting. The augmented image (6th column) contains a mixture of patches between the driving and the generated images. For further details, please refer to the [paper](https://arxiv.org/abs/2103.11600).
 
 ## Citation
 
