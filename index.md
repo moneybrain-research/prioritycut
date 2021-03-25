@@ -69,8 +69,8 @@ allowfullscreen></iframe>
 # Citation 
 
 ```plain
-@article{cheung2021prioritycut,
-      title={PriorityCut: Occlusion-guided Regularization for Warp-based Image Animation}, 
+@misc{cheung2021prioritycut,
+      title={PriorityCut: Occlusion-guided Regularization for Warp-based Image Animation},
       author={Wai Ting Cheung and Gyeongsu Chae},
       year={2021},
       eprint={2103.11600},
