@@ -34,13 +34,13 @@ allowfullscreen></iframe>
 ## BAIR
 
 <center>
-<iframe width="800" height="200"
+<iframe width="640" height="200"
 src="https://user-images.githubusercontent.com/64956291/112411516-5fe2ad80-8d60-11eb-97b0-3544778d1765.mp4"
 frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
-<iframe width="800" height="200"
+<iframe width="640" height="200"
 src="https://user-images.githubusercontent.com/64956291/112411533-6cff9c80-8d60-11eb-91da-7718b3c370ac.mp4"
 frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
