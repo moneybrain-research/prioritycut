@@ -38,10 +38,10 @@ table 			      {
   thead tr        { 
     height:60px;
     // background:#9ddcff;
-    background: #01031f;
+    background: #fbfbfb;
     font-size:16px;
     // border-bottom:  double #01031f30 ;
-    color: white;
+    color: black;
 
     th {
         text-align: center !important;
@@ -68,12 +68,14 @@ table 			      {
 
   td {
     border-bottom:1px dashed #01031f30 ;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   td > * {
       vertical-align : middle;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       // height: 30px;
   }
     

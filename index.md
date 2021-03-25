@@ -6,9 +6,9 @@ layout: default
 # Abstract 
 Image animation generates a video of a source image following the motion of a driving video. State-of-the-art self-supervised image animation approaches warp the source image according to the motion of the driving video and recover the warping artifacts by inpainting. These approaches mostly use vanilla convolution for inpainting, and vanilla convolution does not distinguish between valid and invalid pixels. As a result, visual artifacts are still noticeable after inpainting. CutMix is a state-of-the-art regularization strategy that cuts and mixes patches of images and is widely studied in different computer vision tasks. Among the remaining computer vision tasks, warp-based image animation is one of the fields that the effects of CutMix have yet to be studied. This paper first presents a preliminary study on the effects of CutMix on warp-based image animation. We observed in our study that CutMix helps improve only pixel values, but disturbs the spatial relationships between pixels. Based on such observation, we propose PriorityCut, a novel augmentation approach that uses the top-k percent occluded pixels of the foreground to regularize warp-based image animation. By leveraging the domain knowledge in warp-based image animation, PriorityCut significantly reduces the warping artifacts in state-of-the-art warp-based image animation models on diverse datasets.
 
-<center>
-<img src="assets/images/teaser.png" width="800">
-</center>
+| Source Image | Driving Image | Generated Image | Occlusion Mask | PriorityCut Mask | Augmented Image |
+|---|---|---|---|---|---|
+| ![source](https://user-images.githubusercontent.com/64956291/112423728-86134800-8d76-11eb-835c-84182af73dcd.png) | ![driving](https://user-images.githubusercontent.com/64956291/112423788-a2af8000-8d76-11eb-9d1b-e40641d15c29.png) | ![generated](https://user-images.githubusercontent.com/64956291/112423831-b529b980-8d76-11eb-9280-519addf86e8d.png) | ![occlusion](https://user-images.githubusercontent.com/64956291/112423898-d25e8800-8d76-11eb-80a9-4fadc783d8ce.png) | ![mask](https://user-images.githubusercontent.com/64956291/112423935-e1ddd100-8d76-11eb-8b56-8da570f9589b.png) | ![final](https://user-images.githubusercontent.com/64956291/112423968-f1f5b080-8d76-11eb-8132-b52212c98fb8.png) |
 
 # Results
 
